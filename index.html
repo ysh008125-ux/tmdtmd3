@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>신문사설 데이터베이스</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Gamja+Flower&family=Jua&family=Dongle:wght@300;400;700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+
+<body>
+    <div class="creator-badge">
+        <span class="badge-icon">✨</span> E20250055 유승희
+    </div>
+
+    <!-- Background Shapes -->
+    <div class="bg-shape shape-1"></div>
+    <div class="bg-shape shape-2"></div>
+    <div class="bg-shape shape-3"></div>
+
+    <header>
+        <div class="logo-container">
+            <i class="fa-solid fa-book-open-reader logo-icon"></i>
+            <h1>신문사설 데이터베이스</h1>
+        </div>
+        <p class="subtitle">교양 쑥쑥! 엄선된 사설과 논평 모음집</p>
+    </header>
+
+    <main>
+        <section class="search-section">
+            <div class="search-container">
+                <div class="select-wrapper">
+                    <select id="search-type">
+                        <option value="title">제목</option>
+                        <option value="author">저자</option>
+                        <option value="evidence">근거</option>
+                        <option value="argument">주장</option>
+                    </select>
+                    <i class="fa-solid fa-chevron-down"></i>
+                </div>
+                <div class="input-wrapper">
+                    <i class="fa-solid fa-magnifying-glass search-icon"></i>
+                    <input type="text" id="search-input" placeholder="찾고 싶은 내용을 입력해봐!">
+                </div>
+            </div>
+        </section>
+
+        <section class="results-section">
+            <div class="results-header">
+                <h2 id="results-count">전체 사설 목록 📝</h2>
+            </div>
+            <div class="cards-grid" id="results-container">
+                <!-- Cards will be injected here via JS -->
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 신문사설 데이터베이스. 오늘도 똑똑해지자! 🐥</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
